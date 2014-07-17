@@ -8,6 +8,8 @@ gem 'pg'
 group :development, :test do
   # Use rspec-rails as a testing framework
   gem 'rspec-rails','~> 3.0.0'
+  gem 'guard-rspec'
+  gem 'rb-fsevent', :require => false
   gem 'spring'
 end
 
