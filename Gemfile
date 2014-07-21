@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 gem 'pg'
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Use rspec-rails as a testing framework
