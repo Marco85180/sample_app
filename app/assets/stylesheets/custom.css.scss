@@ -1,1 +1,27 @@
 @import "bootstrap";
+
+.navbar-static-bottom {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.railstuto {
+  margin-left: 0;
+}
+
+#railstutolink {
+ margin-right: 0px;
+}
+
+html, body {
+    height: 95%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 90%;
+    margin: 0 auto -68px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 68px; /* .push must be the same height as .footer */
+}
