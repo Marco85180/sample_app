@@ -14,14 +14,18 @@
 }
 
 html, body {
-    height: 95%;
+    height: 100%;
 }
 .wrapper {
     min-height: 100%;
     height: auto !important;
-    height: 90%;
-    margin: 0 auto -68px; /* the bottom margin is the negative value of the footer's height */
+    height: 100%;
+    margin: 0 auto -51px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer, .push {
-    height: 68px; /* .push must be the same height as .footer */
+    height: 51px; /* .push must be the same height as .footer */
+}
+
+.footer .navbar {
+  margin-bottom: 0;
 }
