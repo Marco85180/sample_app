@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "User Pages", :type => :request do
+describe "User Pages" do
   subject { page }
   describe "signup page" do
     before { visit signup_path }
