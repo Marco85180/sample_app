@@ -5,6 +5,7 @@ ruby '2.1.1'
 gem 'rails', '4.1.1'
 gem 'pg'
 gem 'bootstrap-sass'
+gem 'bcrypt', '>= 3.1.3'
 gem 'rails_12factor', group: :production
 
 group :development, :test do
