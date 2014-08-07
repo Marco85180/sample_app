@@ -6,6 +6,9 @@ gem 'rails', '4.1.1'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'bcrypt', '>= 3.1.3'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'rails_12factor', group: :production
 
 group :development, :test do
