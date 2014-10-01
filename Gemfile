@@ -14,6 +14,7 @@ gem 'rails_12factor', group: :production
 group :development, :test do
   # Use rspec-rails as a testing framework
   gem 'rspec-rails','~> 3.0.0'
+  gem 'rspec-its', '~> 1.0.1'
   gem 'guard-rspec'
   gem 'rb-fsevent', :require => false
   gem 'spring'
