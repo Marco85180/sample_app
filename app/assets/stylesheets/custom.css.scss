@@ -4,6 +4,7 @@
 
 $grayLighter: #eee;
 $grayMediumLight: #eaeaea;
+$blue: #428bca;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -60,7 +61,7 @@ html, body {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid;
+    // border-top: 1px solid;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -80,9 +81,46 @@ aside {
   }
 }
 
+.stats {
+  overflow: auto;
+  margin-top: 5px;
+  border-top: 1px solid $grayLighter;
+  a {
+    float: left;
+    padding: 10px 42px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 62px;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: inline;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
+}
+
+/* Fix space between home_signed_in_user and user_profile */
+
+#space {
+  margin-bottom: 50px;
 }
 
 /* forms */
