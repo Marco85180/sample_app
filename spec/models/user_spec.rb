@@ -154,6 +154,19 @@ RSpec.describe User, :type => :model do
           should include(micropost)
         end
       end
+      it "should destroy associated relationship" do
+        relationships = @user.relationships.to_a
+        reverse_relationships = followed_user.reverse_relationships.to_a
+        followed_user.destroy
+        expect(relationships).not_to be_empty
+        expect(reverse_relationships).not_to be_empty
+        relationships.each do |relationship|
+          expect(Relationship.where(id: relationship.id)).to be_empty
+        end
+        reverse_relationships.each do |r_relationship|
+          expect(Relationship.where(id: r_relationship.id)).to be_empty
+        end
+      end
     end
   end
 
